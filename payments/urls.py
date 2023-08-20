@@ -1,0 +1,1 @@
+from django.urls import pathfrom .views import create_payment, payment_list, create_payment_formurlpatterns = [        path('payment/create', create_payment, name = 'create_payment'),        path('payment/list', payment_list, name= 'payment_list'),        path('create/payment/form', create_payment_form)]

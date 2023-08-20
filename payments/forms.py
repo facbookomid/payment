@@ -1,0 +1,1 @@
+from django import formsclass CreatePaymentForm(forms.Form):    amount = forms.DecimalField(label = 'Amount')    payment_method = forms.ChoiceField(label = 'Payment Method', choices = (            ('credit_card', 'Credit Card'),            ('paypal', 'PayPal'),            ('bank_transfer', 'Bank Transfer'),    ))
